@@ -8,7 +8,8 @@ Oberthema:
 Comparative analysis of internal parameters and feature representations across different feedforward neural networks (FFNs) of identical architecture, focusing on explaining distinct decision-making and activation patterns.
 
 
-Themeneingrenzung
+Themeneingrenzung:
+
 Neural networks, the AI technology behind applications from protein folding to image generation, have become so complex that while we know what they can do - sometimes even outperforming humans - we barely understand how they do it. Their internal decision-making processes remain largely unclear, earning them the title of "black boxes". A clearer view of these networks can improve our understanding of and trust in AI systems.
 
 In my high school thesis (Maturaarbeit), I will compare models of identical feedforward neural network (FFN) architectures and visualise how internally different they can become, despite achieving similar accuracy on the same task.
