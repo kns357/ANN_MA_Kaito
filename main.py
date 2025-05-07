@@ -1,2 +1,1 @@
-#empty file
-#0
+#empty test file
