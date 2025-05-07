@@ -5,7 +5,7 @@ from OpenGL.GLU import *
 import time
 import math
 
-# Parameters
+#params
 layers = 10
 neurons_y = 10
 neurons_z = 10
@@ -13,17 +13,17 @@ spacing = 10
 radius = 0.3
 connections_per_neuron = 4
 
-# Camera controls
+#cam
 angle_x, angle_y = 30, -30
 zoom = -50
 pan_x, pan_y = 0, 0
 mouse_last = [0, 0]
 button_pressed = None
 
-# Time tracker
+#tracking time
 start_time = time.time()
 
-# Generate neuron positions
+#neurons
 positions = []
 for lx in range(layers):
     layer = []
@@ -33,7 +33,7 @@ for lx in range(layers):
             layer.append(pos)
     positions.append(layer)
 
-# Generate connections (with base color/thickness and a phase offset for animation)
+#weight connections
 connections = []
 for i in range(len(positions) - 1):
     src_layer = positions[i]
@@ -43,8 +43,8 @@ for i in range(len(positions) - 1):
             dst = dst_layer[np.random.randint(0, len(dst_layer))]
             base_thickness = np.random.uniform(0.5, 3.0)
             t = np.random.rand()
-            base_color = (1 - t, 1 - t, 1.0)  # white to blue
-            phase = np.random.uniform(0, 2 * np.pi)
+            base_color = (1 - t, 1 - t, 1.0) #white to blue
+            phase = np.random.uniform(0, 2 * np.pi) #animation offset
             connections.append((src, dst, base_thickness, base_color, phase))
 
 
@@ -73,29 +73,28 @@ def display():
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
     glLoadIdentity()
 
-    # Camera transforms
+    #Cam transforms
     glTranslatef(pan_x, pan_y, zoom)
     glRotatef(angle_y, 1, 0, 0)
     glRotatef(angle_x, 0, 1, 0)
 
-    # Draw connections with animated color/thickness
+    #connections
     for (p1, p2, base_thick, base_col, phase) in connections:
-        # Animate using sine wave
         pulse = 0.5 * (1 + math.sin(t * 2 + phase))
         thickness = base_thick * (0.6 + 0.4 * pulse)
 
-        # Color interpolation: white ↔ blue
+        #white - blue
         c = [base_col[i] * (0.6 + 0.4 * pulse) for i in range(3)]
         draw_connection(p1, p2, thickness, c)
 
-    # Draw neurons
+    #drawing neurons
     glColor3f(1.0, 0.3, 0.8)
     for layer in positions:
         for pos in layer:
             draw_sphere(pos, radius)
 
     glutSwapBuffers()
-    glutPostRedisplay()  # <- loop continuously
+    glutPostRedisplay() #continuous loop
 
 
 def reshape(width, height):
