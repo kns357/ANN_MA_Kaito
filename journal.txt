@@ -1,23 +1,23 @@
-26.04.2025, 10:35 / Soga
-25.04.25:
-Tested activation maximization on neurons of FFN in PyTorch / MNIST
- 
-24.04.2025, 19:43 / Soga
-13.04.2025:
-Read the MIT article
+JOURNAL:
+Katio Soga / Betreung: Lesther Zulauf
 
-21.04.2025:
+
+25.04.25 / Soga:
+Tested activation maximization on neurons of FFN in PyTorch / MNIST
+
+24.04.2025 / Soga:
+Formulated an updated project sketch
+
+21.04.2025 / Soga:
 Finished reading chapters 1.0 to 3.3 in AI book
 Looked at google collab code
 Tested my own FFN in PyTorch
 Informed about interpretations (like shapley) and visualisation techniques (pca)
 
-24.04.2025:
-Formulated an updated project sketch
- 
-04.04.2025, 12:54 / Soga
-04.04.25: 
+13.04.2025 / Soga:
+Read the MIT article
+
+04.04.25 / Soga: 
 Meeting with Mr. Zulauf
 Given 2 main sources
 discussed and decided on specific framework, comparing models of one architecture for analytical comparison, same classification, different weights --> subjective neural nets
- 
