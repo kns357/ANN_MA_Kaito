@@ -1,4 +1,0 @@
-
-git clone https://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@github.com/Kaito0733/ANN_MA_Kaito.git
-
-
