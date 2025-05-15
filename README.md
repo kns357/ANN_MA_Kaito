@@ -29,11 +29,11 @@ How can relations between activation patterns and input images be made interpret
 
 
 Vorgehen:
-1. Preparation / Planning
-   a. Study mathematical foundations and related computer vision techniques
-   b. Implement all computational experiments using Python with PyTorch, NumPy, Matplotlib, OpenGL, and other tools for visualisations
-   c. Find optimal FFN architecture for experiments (layers, layer sizes, batch sizes)
-   d. Train and optimise FFNs with identical architectures on binary MNIST classification (e.g., "3" or not), keep the hyperparameters fixed for further experiments
+1. Preparation / Planning  
+   a. Study mathematical foundations and related computer vision techniques    
+   b. Implement all computational experiments using Python with PyTorch, NumPy, Matplotlib, OpenGL, and other tools for visualisations    
+   c. Find optimal FFN architecture for experiments (layers, layer sizes, batch sizes)    
+   d. Train and optimise FFNs with identical architectures on binary MNIST classification (e.g., "3" or not), keep the hyperparameters fixed for further experiments    
 
 2. Map functional neurons and activation patterns
    a. Find relevant relations of neurons to the input using activation maximisation and layer-wise Relevance Propagation (LRP)
