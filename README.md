@@ -22,33 +22,36 @@ I will use optical character recognition (OCR) as the training task, choosing FF
 
 
 Fragestellung:
-- How do activation patterns relate to the input images?
-- Which of these patterns, functional neurons or sub-networks are essential for task performance, and how do they differ spatially across FFNs with identical architecture trained on the same task?
-- How can such differences be used to visually model and intuitively explain the resulting decision paths?
-- Can these decision paths be broken down into explainable, algorithmic steps?
+How can relations between activation patterns and input images be made interpretable?
+- What mathematical methods and visualisation techniques most intuitively model decision paths?
+- Can these decision paths be broken down into explainable steps?
+- Do these explanations account for the internal differences across identically trained models?
 
 
 Vorgehen:
-- Study mathematical foundations and related computer vision techniques
-- Implement all computational experiments using Python with PyTorch, NumPy, Matplotlib, OpenGL, and other tools for visualisations
-- Find optimal FFN architecture for experiments (layers, layer sizes, batch sizes)
-- Train and optimise FFNs with identical architectures on binary MNIST classification (e.g., "3" or not), keep the hyperparameters fixed for further experiments
+1. Preparation / Planning
+   a. Study mathematical foundations and related computer vision techniques
+   b. Implement all computational experiments using Python with PyTorch, NumPy, Matplotlib, OpenGL, and other tools for visualisations
+   c. Find optimal FFN architecture for experiments (layers, layer sizes, batch sizes)
+   d. Train and optimise FFNs with identical architectures on binary MNIST classification (e.g., "3" or not), keep the hyperparameters fixed for further experiments
 
-- Locate neurons detecting specific features in the input using activation maximisation
-- Track neuron activations with activation profiles of each neuron
-- Apply Layer-wise Relevance Propagation (LRP)
-- Compute parameter differences (weights, activations) using cosine similarity and PCA/t-SNE
-- Cluster neurons by spatial and functional similarity
-- Visualise differences and similarities between models with heatmaps
+2. Map functional neurons and activation patterns
+   a. Find relevant relations of neurons to the input using activation maximisation and layer-wise Relevance Propagation (LRP)
+   b. Map activation patterns with activation profiles and PCA
+   c. Apply input perturbation to analyse importance and function of neurons and sub-networks
+   d. Cluster neurons by spatial and functional similarity
+   e. Compute metrics for differences and similarities between models
 
-- Find consistent roles of single neurons or subnetworks (e.g., edge detectors) by comparing activation patterns shared across models
-- Test the necessity of patterns in the input by perturbing certain input features (e.g., curves of a "5") and track the resulting performance changes
-- Test essential vs. redundant neurons across models
+4. Visualisation / Explanation
+   a. Visualise results to make them visually intuitive
+   b. Find and visualise decision boundaries with neural manifolds
+   c. Find simpler (e.g., linear) rules that define how strongly a neuron activates
+   d. Explain local and global decisions with decision graphs and spatial labelling
 
-- Expand to multi-class datasets (all digits or other datasets) to test scalability
-
-- Formalise results
-- Analyse and interpret these results to offer the clearest possible explanation of the decision pathways in the analysed black box networks
+5. Interpretation
+   a. Expand to multi-class datasets (all digits or other datasets) to test scalability
+   b. Formalise results for analysis and interpretation
+   c. Offer the clearest possible explanation of the decision pathways in the analysed black box networks
 
 
 Persönlicher Beitrag:
@@ -63,6 +66,8 @@ Quellen und Material:
 Books / Papers:
 - Russell, S. J., & Norvig, P. (2010). Artificial intelligence: A modern approach (3rd ed.). Pearson.
 - Goodfellow, I., Bengio, Y., & Courville, A. (2016). Deep learning. MIT Press.
+- Colin, J., et al. (2022). What I cannot predict, I do not understand: A human-centered evaluation framework for explainability methods. arXiv preprint arXiv:2208.09725
+- Wu, M., et al. (2023). VERIX: Towards verified explainability of deep neural networks. arXiv preprint arXiv:2306.09931
 - Bach, J. (2019). Phenomenal Experience and the Perceptual Binding State
 - Mohan, D. M., et al. (2016). Effect of Subliminal Lexical Priming on the Subjective Perception of Images: A Machine Learning Approach
 - Inverted Qualia: https://plato.stanford.edu/entries/qualia-inverted/
@@ -79,4 +84,4 @@ Code Examples:
 Tools:
 - Google Collab
 - GitHub
-- GPU-accelerated python libraries 
+- GPU-accelerated python libraries
