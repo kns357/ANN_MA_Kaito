@@ -26,7 +26,7 @@ How can relations between activation patterns and input images be made interpret
 - Do these explanations account for the internal differences across identically trained models?
 
 
-Vorgehen:    
+Vorgehen:  
 1. Preparation / Planning    
    a. Study mathematical foundations and related computer vision techniques    
    b. Implement all computational experiments using Python with PyTorch, NumPy, Matplotlib, OpenGL, and other tools for visualisations    
