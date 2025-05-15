@@ -1,4 +1,4 @@
-### Inside the Black Box: Exploring Distinct Decision‑Making in Artificial Neural Networks:
+### Inside the Black Box: Understanding Decision‑Making in Artificial Neural Networks:
 
 Betreuung: Lesther Zulauf, Fach: Informatik / Mathematik
 
@@ -7,7 +7,6 @@ Oberthema:
 
 Comparative analysis of internal parameters and feature representations across different feedforward neural networks (FFNs) of identical architecture, focusing on explaining distinct decision-making and activation patterns.
 
-
 Themeneingrenzung:
 
 Neural networks, the AI technology behind applications from protein folding to image generation, have become so complex that while we know what they can do - sometimes even outperforming humans - we barely understand how they do it. Their internal decision-making processes remain largely unclear, earning them the title of "black boxes". A clearer view of these networks can improve our understanding of and trust in AI systems.
@@ -15,11 +14,11 @@ Neural networks, the AI technology behind applications from protein folding to i
 In my high school thesis (Maturaarbeit), I will compare models of identical feedforward neural network (FFN) architectures and visualise how internally different they can become, despite achieving similar accuracy on the same task.
 Although two FFNs trained under identical conditions can reach comparable performance, their internal configurations (weights, biases, activations) can differ significantly. My objective is to analyse and explain:
 
-- How different instances of FFNs develop distinct decision pathways and internal representations despite solving the same task, focusing on spatial differences such as functionally similar neurons (e.g., edge detectors) appearing in different layers or regions.
-- Which neuron functions consistently develop across models and are essential for performance.
-- How these successful yet internally different decision pathways can be intuitively explained.
+- How different instances of FFNs develop distinct decision pathways and internal representations despite solving the same task.
+- Local and global decision making of a model.
+- How these decisions can be visualised intuitively and broken down into interpretable rules.
 
-I will use optical character recognition (OCR) as the training task, choosing FFNs over convolutional neural networks (CNNs) to avoid the spatial biases from convolutional layers that are already visually interpretable. This allows me to focus on how fully connected networks internally represent and process visual information. My aim is to analyse and explain the structural differences and consistencies in the weights, activations, and decision-making across different FFN model instances.
+I will use optical character recognition (OCR) as the training task, choosing FFNs over convolutional neural networks (CNNs) to avoid the spatial biases from convolutional layers that are already visually interpretable. This allows me to focus on how fully connected networks internally represent and process visual information. My aim is to analyse and explain the structural differences and consistencies in the activations and decision-making across different FFN model instances.
 
 
 Fragestellung:
