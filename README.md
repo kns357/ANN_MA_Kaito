@@ -27,29 +27,29 @@ How can relations between activation patterns and input images be made interpret
 
 
 Vorgehen:  
-1. Preparation / Planning    
-   a. Study mathematical foundations and related computer vision techniques    
-   b. Implement all computational experiments using Python with PyTorch, NumPy, Matplotlib, OpenGL, and other tools for visualisations    
-   c. Find optimal FFN architecture for experiments (layers, layer sizes, batch sizes)    
-   d. Train and optimise FFNs with identical architectures on binary MNIST classification (e.g., "3" or not), keep the hyperparameters fixed for further experiments    
+1. Preparation / Planning
+   a. Study mathematical foundations and related computer vision techniques
+   b. Implement all computational experiments using Python with PyTorch, NumPy, Matplotlib, OpenGL, and other tools for visualisations
+   c. Find optimal FFN architecture for experiments (layers, layer sizes, batch sizes)
+   d. Train and optimise FFNs with identical architectures on binary MNIST classification (e.g., "3" or not), keep the hyperparameters fixed for further experiments
 
-2. Map functional neurons and activation patterns    
-   a. Find relevant relations of neurons to the input using activation maximisation and layer-wise Relevance Propagation (LRP)    
-   b. Map activation patterns with activation profiles and PCA    
-   c. Apply input perturbation to analyse importance and function of neurons and sub-networks    
-   d. Cluster neurons by spatial and functional similarity    
-   e. Compute metrics for differences and similarities between models    
+2. Map functional neurons and activation patterns
+   a. Find relevant relations of neurons to the input using activation maximisation and layer-wise Relevance Propagation (LRP)
+   b. Map activation patterns with activation profiles and PCA
+   c. Apply input perturbation to analyse importance and function of neurons and sub-networks
+   d. Cluster neurons by spatial and functional similarity
+   e. Compute metrics for differences and similarities between models
 
-4. Visualisation / Explanation    
-   a. Visualise results to make them visually intuitive    
-   b. Find and visualise decision boundaries with neural manifolds    
-   c. Find simpler (e.g., linear) rules that define how strongly a neuron activates    
-   d. Explain local and global decisions with decision graphs and spatial labelling    
+3. Visualisation / Explanation
+   a. Visualise results to make them visually intuitive
+   b. Find and visualise decision boundaries with neural manifolds
+   c. Find simpler (e.g., linear) rules that define how strongly a neuron activates
+   d. Explain local and global decisions with decision graphs and spatial labelling
 
-5. Interpretation    
-   a. Expand to multi-class datasets (all digits or other datasets) to test scalability    
-   b. Formalise results for analysis and interpretation    
-   c. Offer the clearest possible explanation of the decision pathways in the analysed black box networks    
+4. Interpretation
+   a. Expand to multi-class datasets (all digits or other datasets) to test scalability
+   b. Formalise results for analysis and interpretation
+   c. Offer the clearest possible explanation of the decision pathways in the analysed black box networks   
 
 
 Persönlicher Beitrag:  
