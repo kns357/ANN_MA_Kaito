@@ -25,8 +25,8 @@ def bce_derivative(y_pred, y_true, eps=1e-10):
 
 
 smiley_coords = set([
-    (2, 3), (6, 3),  # Eyes
-    (2, 7), (3, 8), (4, 8), (5, 8), (6, 8), (7, 7),  # Mouth
+    (2, 3), (6, 3),  #Eyes
+    (2, 7), (3, 8), (4, 8), (5, 8), (6, 8), (7, 7),  #Mouth
     (1, 1), (2, 0), (3, 0), (4, 0), (5, 0), (6, 0), (7, 1),
     (8, 2), (9, 4), (9, 5), (9, 6), (8, 8),
     (7, 9), (6, 9), (5, 9), (4, 9), (3, 9),
@@ -80,7 +80,7 @@ epochs = 200000
 lr = 0.05
 
 for epoch in range(epochs):
-    # Forward pass
+    #Forward
     a = X
     zs = []
     activations = [X]
