@@ -67,7 +67,6 @@ Books / Papers:
 - Wu, M., et al. (2023). VERIX: Towards verified explainability of deep neural networks. arXiv preprint arXiv:2306.09931
 - Bach, J. (2019). Phenomenal Experience and the Perceptual Binding State
 - Mohan, D. M., et al. (2016). Effect of Subliminal Lexical Priming on the Subjective Perception of Images: A Machine Learning Approach
-- Inverted Qualia: https://plato.stanford.edu/entries/qualia-inverted/
 - Ribeiro, M. T., Singh, S., & Guestrin, C. (2016). “Why should I trust you?”: Explaining the predictions of any classifier
 - Molnar, C. (2019). Interpretable machine learning: A guide for making black box models explainable
 - Erhan, D., Courville, A., & Bengio, Y. (2010). Understanding representations learned in deep architectures
