@@ -1,4 +1,4 @@
-### Inside the Black Box: Understanding Decision‑Making in Artificial Neural Networks:
+### Not Quite Human: Why Black Box AI Isn't Smarter Than You and How to Make It:
 
 Betreuung: Lesther Zulauf, Fach: Informatik / Mathematik
 
