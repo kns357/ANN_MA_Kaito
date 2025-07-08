@@ -1,4 +1,4 @@
-### Not Quite Human: Why Black Box AI Isn't Smarter Than You and How to Make It:
+### Not Quite Human: Discovering Human Conceptual Reasoning Inside Artificial Neural Networks:
 
 Betreuung: Lesther Zulauf, Fach: Informatik / Mathematik
 
