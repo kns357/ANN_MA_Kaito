@@ -1,4 +1,4 @@
-### Not Quite Human: Discovering Human Conceptual Reasoning Inside Artificial Neural Networks:
+### Not Quite Human: How Black Box AI Thinks – and How It Doesn't:
 
 Betreuung: Lesther Zulauf, Fach: Informatik / Mathematik
 
