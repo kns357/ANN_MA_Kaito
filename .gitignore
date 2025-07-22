@@ -1,7 +1,6 @@
 venv/
 venv0/
 venv1/
-stored_concepts/
 other/
 data/
 __pycache__/
