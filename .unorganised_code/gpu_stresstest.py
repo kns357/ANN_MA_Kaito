@@ -9,7 +9,6 @@ def stress_test_gpu(duration_sec=300, tensor_size=(8192, 8192)):
     device = torch.device('cuda')
     print(f"Starting GPU stress test on {device} for {duration_sec} seconds...")
     
-    # Create two large random tensors on GPU
     a = torch.randn(tensor_size, device=device)
     b = torch.randn(tensor_size, device=device)
     
@@ -17,11 +16,9 @@ def stress_test_gpu(duration_sec=300, tensor_size=(8192, 8192)):
     iterations = 0
     try:
         while time.time() - start_time < duration_sec:
-            # Matrix multiply, then elementwise multiply, then sum
             c = torch.matmul(a, b)
             d = c * a
             s = d.sum()
-            # Force computation
             s.backward() if s.requires_grad else None
             torch.cuda.synchronize()
             iterations += 1
