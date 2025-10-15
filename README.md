@@ -1,4 +1,4 @@
-### Not Quite Human: How Black Box AI Thinks – and How It Doesn't:
+### Beyond Correlation: How the Explainability of Artificial Neural Networks Misaligns with Human Cognition:
 
 Betreuung: Lesther Zulauf, Fach: Informatik / Mathematik
 
